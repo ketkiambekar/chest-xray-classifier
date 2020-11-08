@@ -1,0 +1,5 @@
+@mixin stage1 {
+    @media screen and (max-width: 1130px) {
+        @content
+    }
+}

@@ -3,33 +3,48 @@
 <head>
   <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
 <style>
+
 body {
+  height: 100vh;
   font-family: helvetica, sans-serif;
   margin:0 auto;
   max-width:600px;
   background: #F2E7DD;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 div {
-    height:200px;
     background-size: cover;
-    position: relative;.
-    margin: 40px 0 0 0;
+    position: relative;
     border-radius:12px;
-
 }
+img {
+  width: 750px;
+  margin-top: 30px; 
+}
+.boxes {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
  
 .first {
   bottom:29;
   margin:0;
 }
 .second {
-   bottom:34;
+  bottom:34;
   margin:0;
   
 }
 .third {
-   bottom:-22;
-  margin:0;
+  bottom:-22;
+  margin:0; 
   
   
 }
@@ -60,10 +75,9 @@ p {
   h2 {
      text-align:center;
      bottom:5;
-    margin:45;
      font-family: 'Tahoma';
      color: #306734;
-     font-size: 15px
+     font-size: 30px;
      
 }     
   small1 { 
@@ -82,8 +96,10 @@ p {
 
 <body>
 
-<h1>PNEUM-O-RAY</h1>
+<img src='../img/pneumoray-logo.png'/>
 <h2>Results Positivive</h2>
+
+<div class='boxes'>
 <div class="first">
 <p><b>Pnemonia Symptoms</b></span><br />
 <small1>Fever | Chills | Breathlessness | Nausea | Sweating </small1>
@@ -100,6 +116,7 @@ p {
 <p><b>Doctor Recommendations</b><span></span><br /> 
 <small2>Click the link to find the top doctors in your network and book an appointment:  </small2> <a href="https://www.zocdoc.com/">ZOCDOC</a>
 </p>
+</div>
 </div>
 </body>
  
