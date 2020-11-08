@@ -1,0 +1,156 @@
+$primary-color: #F2E7DD;
+$secondary-color: #E9230C;
+$text-color: #723905;
+
+h1 {
+    font-size: 50px;
+    font-weight: 900;
+    color: $text-color;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background: $primary-color;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    #logo {
+        width: 50%;
+    }
+
+    button {
+        cursor: pointer;
+        margin-top: 100px;
+        font-size: 40px;
+        padding: 10px 60px;
+        border-radius: 20px;
+        background-color: $secondary-color;
+        border: none;
+        color: $primary-color;
+        box-shadow: 0 9px #999;
+        transition: 300ms;
+        transition-timing-function: ease-out;
+    }
+
+    button:active {
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+}
+
+.purpose {
+    line-height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $text-color;
+    font-size: 25px;
+    margin-bottom: 200px;
+    font-weight: 600;
+
+    p {
+        width: 70%;
+    }
+
+        span {
+            color: $secondary-color;
+        }
+}
+
+.how-to {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+
+    .steps {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        height: 50%;
+
+        .card {
+            width: 360px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: space-around;
+            color: $text-color;
+            font-size: 25px;
+            padding: 20px;
+            border-radius: 40px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        #card1 {
+            i {
+                background: $primary-color;
+                font-size: 100px;
+                color: $secondary-color;
+            }
+        }
+
+        #card2 {
+            i {
+                background: $primary-color;
+                font-size: 100px;
+                color: $secondary-color;
+            }
+        }
+
+        #card3 {
+            i {
+                background: $primary-color;
+                font-size: 100px;
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+.about {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    #description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: space-around;
+        height: 50%;
+        width: 30%;
+        text-align: left;
+    }
+
+    p {
+        font-size: 20px;
+        color: $text-color;
+        line-height: 30px;
+    }
+
+    #pneumonia {
+        width: 40%;
+    }
+}
+
+
+
+
+
