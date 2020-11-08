@@ -48,6 +48,12 @@ span {
   width: 750px;
 }
 
+@media screen and (max-width: 800px) {
+  .home #logo {
+    width: 90%;
+  }
+}
+
 .home button {
   cursor: pointer;
   margin-top: 100px;
@@ -63,6 +69,13 @@ span {
   transition: 300ms;
   -webkit-transition-timing-function: ease-out;
           transition-timing-function: ease-out;
+}
+
+@media screen and (max-width: 800px) {
+  .home button {
+    font-size: 30px;
+    padding: 10px 50px;
+  }
 }
 
 .home button:active {
@@ -88,6 +101,18 @@ span {
   font-size: 25px;
   margin-bottom: 200px;
   font-weight: 600;
+}
+
+@media screen and (max-width: 1130px) {
+  .purpose {
+    margin-bottom: 75px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .purpose {
+    font-size: 20px;
+  }
 }
 
 .purpose p {
@@ -123,25 +148,24 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
 @media screen and (max-width: 1130px) {
   .how-to .steps {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    height: 75%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 90%;
   }
 }
 
@@ -185,6 +209,16 @@ span {
           align-items: center;
 }
 
+@media screen and (max-width: 800px) {
+  .about {
+    height: 120vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .about #description {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -203,6 +237,14 @@ span {
   text-align: left;
 }
 
+@media screen and (max-width: 800px) {
+  .about #description {
+    width: 70%;
+    height: 40%;
+    text-align: center;
+  }
+}
+
 .about p {
   font-size: 20px;
   line-height: 30px;
@@ -212,9 +254,16 @@ span {
   width: 40%;
 }
 
+@media screen and (max-width: 800px) {
+  .about #pneumonia {
+    width: 350px;
+  }
+}
+
 .disclaimer {
   width: 100%;
   height: 100px;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

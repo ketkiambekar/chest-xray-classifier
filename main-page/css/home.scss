@@ -41,6 +41,10 @@ span {
 
     #logo {
         width: 750px;
+
+        @include stage2 {
+            width: 90%;
+        }
     }
 
     button {
@@ -55,6 +59,11 @@ span {
         box-shadow: 0 9px #999;
         transition: 300ms;
         transition-timing-function: ease-out;
+
+        @include stage2 {
+            font-size: 30px;
+            padding: 10px 50px;
+        }
     }
 
     button:active {
@@ -73,6 +82,14 @@ span {
     font-size: 25px;
     margin-bottom: 200px;
     font-weight: 600;
+
+    @include stage1 {
+        margin-bottom: 75px;   
+    }
+
+    @include stage2 {
+        font-size: 20px;
+    }
 
     p {
         width: 70%;
@@ -95,15 +112,13 @@ span {
         width: 100%;
         height: 50%;
         display: flex;
-        flex-wrap: wrap;
         flex-direction: row;
+        align-items: center;
         justify-content: space-around;
 
         @include stage1 {
-           // flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            height: 75%;
+            flex-direction: column;
+            height: 90%;
         }
 
         .card {
@@ -148,6 +163,11 @@ span {
     justify-content: space-around;
     align-items: center;
 
+    @include stage2 {
+        height: 120vh;
+        flex-direction: column;
+    }
+
     #description {
         display: flex;
         flex-direction: column;
@@ -156,6 +176,12 @@ span {
         height: 50%;
         width: 30%;
         text-align: left;
+
+        @include stage2 {
+            width: 70%;
+            height: 40%;
+            text-align: center;
+        }
     }
 
     p {
@@ -165,12 +191,17 @@ span {
 
     #pneumonia {
         width: 40%;
+
+        @include stage2 {
+            width: 350px;
+        }
     }
 }
 
 .disclaimer {
     width: 100%;
     height: 100px;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;

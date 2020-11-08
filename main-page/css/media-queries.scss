@@ -1,5 +1,11 @@
 @mixin stage1 {
     @media screen and (max-width: 1130px) {
-        @content
+        @content;
+    }
+}
+
+@mixin stage2 {
+    @media screen and (max-width: 800px) {
+        @content;
     }
 }
