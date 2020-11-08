@@ -40,18 +40,20 @@ img {
 .first {
   bottom:29;
   margin:0;
+  width: 597.2px;
 }
 .second {
   bottom:34;
   margin:0;
-  
+  width: 597.2px;
 }
+
 .third {
   bottom:-22;
   margin:0; 
-  
-  
+  width: 597.2px;
 }
+  
 p {
   color:#7B4B3B;
   background:#D59D86;
@@ -77,7 +79,7 @@ p {
   h2 {
      text-align:center;
      bottom:5;
-     color: #306734;
+     color: red;
      font-size: 30px;
      
 }     
@@ -90,6 +92,24 @@ p {
     font-size: 14px;
   }
 
+  b {
+    font-size: 15px;
+  }
+
+@media screen and (max-width: 800px) {
+  img {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  small1 {
+    word-spacing: 11px;
+  }
+  .first, .second, .third {
+    width: 493.2px;
+  }
+}
  
 </style>
 
@@ -98,18 +118,18 @@ p {
 <body>
 
 <img src='../img/pneumoray-logo.png'/>
-<h2>Results Positivive</h2>
+<h2>Tested Negative</h2>
 
 <div class='boxes'>
 <div class="first">
-<p><b>Pnemonia Symptoms</b></span><br />
+<p><b>Pneumonia Symptoms</b></span><br />
 <small1>Fever | Chills | Breathlessness | Nausea | Sweating </small1>
 </p>
 </div>
 
 <div class="second">
-<p><b>Pnemonia Treatment</b><span></span><br />
-<small>To treat the infection while at home, we advise you to consume plenty of warm fluids to bring up phlegm (mucus), soak the body in lukewarm water, do a salt water gargle, and most importantly rest for at least 8 hours.
+<p><b>How To Prevent Pneumonia</b><span></span><br />
+<small>Stuff that says how to prevent pneumonia
 </p>
 </div>
 
