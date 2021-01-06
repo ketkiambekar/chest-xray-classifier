@@ -1,4 +1,4 @@
-# Pneumoray
+# Chest Xray Binary Classifier using Transfer Learning
 
 A Machine Learning algorithm that can detect whether a person has pneumonia or not based on their X-Ray with a 91% accuracy.
 
